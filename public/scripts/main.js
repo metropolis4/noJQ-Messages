@@ -15,8 +15,7 @@
     // Make a new message
     var addButton = document.getElementById('addMemo');
     addButton.addEventListener('click', function(){
-        var messageBlock = document.querySelector('.message');
-        var newMessageBlock = messageBlock.cloneNode(true);
+        var newMessageBlock = document.querySelector('.message').cloneNode(true);
         var myMessage = document.getElementById('userMemo').value;
         var auth = newMessageBlock.firstChild;
         auth.textContent = "Written by: " + user;
