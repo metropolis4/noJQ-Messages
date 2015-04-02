@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    input(type="text" id="name" value="Matt")
+    button(id="theButton") Click Me!
+    p#message
+    input(type="text" id="userMemo")
+    button(id="addMemo") Send a Message!
+    div#myMessages 
+        h2 My Messages:
+    div.message.hiding
+        h2.author
+        p.innerMessage
